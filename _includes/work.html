@@ -1,0 +1,11 @@
+<article class="work-item">
+  <div class="date"><span class="nowrap">{{ include.work.start_date | date: "%B %Y" }}</span> &ndash; {% if include.work.end_date %}{{ include.work.end_date | date: "%B %Y" }}{% else %}Present{% endif %}</div>
+  <h3>
+    <div class="position">{{ include.work.position }}</div>
+    <div class="visuallyhidden">at</div>
+    <div class="organization">{{ include.work.organization }}</div>
+    <div class="hidden">in</div>
+    <div class="location">{{ include.work.location }}</div>
+  </h3>
+  {{ include.work.content }}
+</article>

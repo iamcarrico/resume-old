@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <div class="post-content">
+    {% if page.image %}
+      <img src="/{{ page.image.url }}" alt="{{ page.image.alt }}" class="hero-image">
+    {% endif %}
+    {{ content }}
+  </div>
+
+  {% include comments.html %}
+
+</article>

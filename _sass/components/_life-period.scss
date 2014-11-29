@@ -1,0 +1,96 @@
+.life-period {
+  h3, .date {
+    font-size: 1.25em;
+
+    @include breakpoint($work-single) {
+      text-align: center;
+    }
+  }
+
+  article {
+    @include breakpoint($work-dividers) {
+      border-top: 1px solid #eee;
+      padding-top: 1em;
+
+      &:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .date {
+    @include breakpoint($details-split) {
+      @include grid-span(1,2);
+    }
+    @include breakpoint($details-table) {
+      @include grid-span(1,3);
+    }
+    @include breakpoint($details-horizontal) {
+      @include grid-span(1,2);
+    }
+  }
+
+  .position {
+    @include breakpoint($details-split) {
+      text-align: right;
+      @include grid-span(1,1);
+    }
+    @include breakpoint($details-table) {
+      @include grid-span(1,2);
+    }
+    @include breakpoint($details-horizontal) {
+      @include grid-span(1,4);
+    }
+    font-weight: 600;
+  }
+
+  .organization {
+    @include breakpoint($work-single) {
+      display: inline;
+    }
+    @include breakpoint($details-split) {
+      text-align: right;
+      @include grid-span(1,1);
+      font-weight: 600;
+      clear: left;
+    }
+    @include breakpoint($details-table) {
+      @include grid-span(1,2);
+      font-weight: 600;
+      clear: left;
+    }
+    @include breakpoint($details-horizontal) {
+      @include grid-span(1,3);
+    }
+  }
+
+  .location {
+    @include breakpoint($work-single) {
+      display: inline;
+    }
+    @include breakpoint($details-split) {
+      @include grid-span(1,2);
+    }
+    @include breakpoint($details-table) {
+      @include grid-span(1,3);
+    }
+    @include breakpoint($details-horizontal) {
+      @include grid-span(1,5);
+      text-align: right;
+    }
+  }
+
+  p, ul {
+
+    @include breakpoint($headers-left) {
+      @include grid-span(2, 2);
+      clear: both;
+    }
+
+    @include breakpoint($details-horizontal) {
+      @include grid-span(3, 3);
+      clear: both;
+    }
+  }
+}

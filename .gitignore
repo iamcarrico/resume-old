@@ -1,0 +1,20 @@
+# Jekyll Folder
+_site
+
+# Compiled CSS
+css
+
+# Minimized images / icons
+images/
+icons/
+
+# Files brought in from package managers
+node_modules
+bower_components
+.vendor/bundle
+
+# Jekyll Assets Cache
+.jekyll-assets-cache
+
+# Temporary directory for deployment.
+.tmp

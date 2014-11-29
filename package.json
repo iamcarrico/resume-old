@@ -1,0 +1,17 @@
+{
+  "name": "ian-resume",
+  "version": "0.0.0",
+  "homepage": "http://www.iancarrico.com",
+  "repository": "https://github.com/iamcarrico/resume",
+  "description": "My little resume.",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-grunticon": "^1.3.0",
+    "gulp-grunt": "^0.5.2",
+    "gulp-poole": "*"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<section class="work life-period">
+  <h2 class="section-title">Work</h2>
+  {% assign current_work_items = site.work | where:"end_date",nil | sort: 'start_date' %}
+  {% for work in current_work_items reversed %}
+    {% include work.html work=work %}
+  {% endfor %}
+
+  {% assign work_items = site.work | sort: 'end_date' %}
+  {% for work in work_items reversed %}
+    {% if work.end_date %}{% include work.html work=work %}{% endif %}
+  {% endfor %}
+<section>
+
+<section class="education life_period">
+  <h2 class="section-title">Education</h2>
+  {% assign education_items = site.education | sort: 'grad_date' %}
+  {% for education in education_items reversed %}
+    {% include education.html education=education %}
+  {% endfor %}
+</section>
