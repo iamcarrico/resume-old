@@ -26,6 +26,7 @@ exclude:
   - config.rb
   - package.json
   - gulpfile.js
+  - gruntfile.js
   - node_modules
   - Gemfile
   - Gemfile.lock
